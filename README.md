@@ -7,6 +7,14 @@ Here the <a href="https://kmutnbacth-my.sharepoint.com/:w:/g/personal/s650101262
 
 ---
 
+## Feature
+
+- Able to control light bulbs using Zigbee switches and send status through MQTT protocol between Node-RED and Zigbee devices.
+- Able to control light bulbs using WebApp (using Node.js) and Node-RED dashboard those communicate through WebSocket protocol between Node-RED and any browser.
+- Able to control light bulbs using ESP32 switches through MQTT protocol between Node-RED and Zigbee devices.
+
+---
+
 ## Requirements
 ### Hardware
 - 2x Solderable Bread Board
@@ -18,18 +26,25 @@ Here the <a href="https://kmutnbacth-my.sharepoint.com/:w:/g/personal/s650101262
 - 1x Zigbee Dongle
 - 2x Zigbee Smart Light Bulb 
 - 1x Zigbee Smart Button 4 Gang 
+
 ### Software
 - Windows 10 or Windows 11 (Any editions except S editions)
   - Chrome or Microsoft Edge (Version 119 or newer)
-  - Arduino IDE (Version 2.2.1 or newer)
+  - Arduino IDE (Version 2.2.1 or newer) with these libraries
+    - PubSubClient (Version 2.8 or newer)
+    - WiFi101 (Version 0.16.1 or newer)
+    - ArduinoJSON (Version 6.21.3 or newer)
   - Visual Studio Code (Version 1.84.1 or newer) with Extensions
     - Remote Development (Version 0.24.0 or newer)
     - Live Server (Version 5.7.9 or newer)
     - Live Share (Version 1.0.5892 or newer)
 - Raspbian OS 11 Bullseye
-  - Node.js (Version 18 or newer)
+  - Node.js (Version 18 or newer) with these libraries
+    - WebSocket (Latest version)
+    - Express (Latest version)
+    - Path (Latest version)
   - IOTStack (Latest version)
-    - Node-RED (Version 3.1.0 or newer)
+    - Node-RED (Version 3.1.0 or newer) with libraries in the [report](https://kmutnbacth-my.sharepoint.com/:w:/g/personal/s6501012620063_kmutnb_ac_th/EQ8Y3XFvZ6RHqaU4NodkV2cBK84RMmgoY88TAV6mkM4y0w?e=VsQDXf)
     - MQTT Broker (Version 2.0.18 or newer)
     - Portainer.io Community Edition (Version 2.19.1 or newer)
     - Zigbee2MQTT (Latest version)
